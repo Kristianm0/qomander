@@ -1,10 +1,14 @@
 @import "/src/assets/scss/colors";
+
 %card {
   padding: 12px 20px;
-  background-color: $secondary;
+  background-color: $secondary; // verde oscuro
   border-radius: 20px;
+  border: 2px solid $primary; // borde verde principal
 }
+
 $card_width: 315px;
+
 main {
   .qomander-logo {
     max-width: 60px;
@@ -14,13 +18,16 @@ main {
     cursor: pointer;
     margin-bottom: 35px;
   }
+
   .meal {
     @extend %card;
     display: flex;
     align-items: center;
     max-width: $card_width;
     margin-inline: auto;
+
     $this: &;
+
     &__picture {
       img {
         max-height: 75px;
@@ -28,80 +35,95 @@ main {
         width: auto;
       }
     }
+
     &__name {
       font-weight: 600;
       margin-left: 30px;
       font-size: 22px;
       line-height: 1.5;
+
       .meal__price {
-        // #{$this} is not working here, idk why
         font-size: 18px;
-        color: $primary;
+        color: $primary; // verde principal
       }
     }
   }
+
   .selected-options {
     margin-top: 17px;
     max-width: $card_width;
     margin-inline: auto;
     @extend %card;
+
     &__heading {
       font-size: 17px;
       font-weight: 600;
       margin-bottom: 8px;
       display: flex;
       justify-content: space-between;
+
       span {
-        color: $primary;
+        color: $primary; // verde principal
         font-size: 15px;
       }
     }
+
     &__stack {
       display: flex;
       width: 100%;
       overflow-x: auto;
       padding-bottom: 5px;
       scroll-behavior: smooth;
+
       .option {
         text-align: center;
         flex-shrink: 0;
         margin-right: 23px;
+
         > img {
           max-height: 45px;
-          // background-color: white;
           padding: 3px;
           border-radius: 15px;
+          border: 2px solid $primary; // borde verde principal
         }
+
         > p {
           font-weight: 600;
           font-size: 11.5px;
           margin-top: 3px;
+          color: $white; // texto blanco
         }
       }
     }
   }
+
   .heading {
     text-align: center;
     margin-top: 30px;
+
     &__picture {
       max-width: 100px;
       margin-inline: auto;
     }
+
     h1 {
-      color: $blue;
+      color: $primary; // verde principal
       font-size: 41px;
       font-weight: bold;
     }
+
     h2 {
       margin-top: 38px;
       font-size: 19px;
       font-weight: 600;
+      color: $white; // texto blanco
     }
+
     &__drink {
-      background-color: $secondary;
+      background-color: $secondary; // verde oscuro
       max-width: 230px;
       margin-inline: auto;
-      border: 2.5px solid $primary;
+      border: 2.5px solid $primary; // borde verde principal
       border-radius: 15px;
       padding: 10px 12px;
       display: flex;
@@ -109,25 +131,30 @@ main {
       margin-top: 10px;
       position: relative;
       cursor: pointer;
+
       &__image {
         max-height: 65px;
       }
+
       &__title {
         font-size: 22px;
         line-height: 1.5;
         font-weight: 600;
+        color: $white;
       }
+
       &__price {
-        color: $primary;
+        color: $primary; // verde principal
         text-align: start;
         font-weight: 600;
         font-size: 18px;
       }
+
       &__circle {
-        background-color: #1f1f1f;
+        background-color: $secondary; // verde oscuro
         width: 35px;
         height: 35px;
-        border-color: #d65745 #d65745 #1f1f1f #1f1f1f;
+        border-color: $primary $primary $secondary $secondary; // verde principal borde
         border-width: 2.5px;
         border-style: solid;
         border-radius: 50%;
@@ -138,6 +165,7 @@ main {
         position: absolute;
         right: -19px;
         top: 22px;
+
         > span {
           color: $primary;
           font-weight: bold;
@@ -147,17 +175,22 @@ main {
       }
     }
   }
+
   .footer {
     margin-top: 50px;
     text-align: center;
+
     &__heading {
       font-weight: 600;
       font-size: 21px;
+      color: $white;
     }
+
     &__buttons {
       display: flex;
       margin-top: 17px;
       justify-content: space-around;
+
       > button {
         width: 47%;
         font-weight: 600;
@@ -166,13 +199,15 @@ main {
         font-size: 20px;
         cursor: pointer;
         border: 0;
+
         &.white {
           background-color: $white;
           color: $smoke;
         }
+
         &.orange {
-          background-color: $primary;
-          color: white;
+          background-color: $primary; // verde principal
+          color: $white;
         }
       }
     }

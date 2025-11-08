@@ -2,7 +2,7 @@
 /* Firefox */
 * {
   scrollbar-width: auto;
-  scrollbar-color: #d65745 #404040;
+  scrollbar-color: #ffffff #0B3C2E; // Verde principal sobre verde oscuro
 }
 
 /* Chrome, Edge, and Safari */
@@ -12,11 +12,11 @@
 }
 
 *::-webkit-scrollbar-track {
-  background: #404040;
+  background: #0B3C2E; // Verde oscuro
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #d65745;
+  background-color: #25D366; // Verde principal
   border-radius: 32px;
-  // border: 2px solid #404040;
+  // border: 2px solid #0B3C2E; // opcional, si quieres un borde
 }

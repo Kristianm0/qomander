@@ -1,6 +1,11 @@
-$primary: #d65745;
-$secondary: #1f1f1f;
-$grey: #2c2c2c;
-$blue: #37bc9d;
-$white: #eeeeee;
-$smoke: #676767;
+// Colores principales de la marca
+$primary: #25D366;      // Verde principal → botones y elementos interactivos
+$secondary: #0B3C2E;    // Verde oscuro → fondo principal y secciones importantes
+$white: #FFFFFF;         // Blanco → textos sobre fondos oscuros, botones con borde
+$black-soft: #1C1C1C;   // Negro suave / gris oscuro → texto sobre fondos claros
+$beige-light: #FCF6ED;  // Beige claro → fondos secundarios o secciones suaves
+
+// Colores de apoyo (opcional)
+$grey: #2c2c2c;          // Gris oscuro adicional
+$smoke: #676767;         // Gris medio para bordes o textos secundarios
+$blue: #37bc9d;          // Verde azulado → acentos o links (si se necesita)

@@ -2,22 +2,48 @@
 @import "./assets/scss/overflow";
 @import "./assets/fonts/fonts";
 @import "./assets/scss/animations";
+
 body {
-  font-family: Montserrat;
-  background-color: #1f1f1f;
-  color: white;
+  font-family: Montserrat, sans-serif;
+  background-color: #0B3C2E; // verde oscuro de fondo
+  color: #FFFFFF;            // texto principal en blanco
 }
+
 .notyf {
   top: -20px !important;
+
   &__toast {
     max-width: 316px !important;
+    background-color: #25D366 !important; // verde principal de tu marca
   }
+
   &__message {
     text-align: center;
     font-weight: 600;
     font-size: 16px;
+    color: #ffffff; // texto negro suave dentro de los toast
   }
+
   &__wrapper {
     padding-right: 10px;
+  }
+}
+
+// Opcional: estilos de enlace o botones globales
+a, button {
+  color: #25D366; // verde principal
+}
+
+button {
+  background-color: #FCF6ED; // beige claro
+  border-radius: 8px;
+  border: 0;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #25D366; // verde principal al pasar el mouse
+    color: #FFFFFF;
   }
 }

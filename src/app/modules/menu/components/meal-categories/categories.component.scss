@@ -1,23 +1,26 @@
 @import "/src/assets/scss/colors";
 
 :host {
-  background-color: $secondary;
+  background-color: $secondary; // Fondo verde oscuro
   max-width: 150px;
   width: 100%;
   margin-bottom: -25px;
   margin-left: -25px;
   margin-top: -25px;
 }
+
 .main {
   padding-inline: 5px;
   display: flex;
   flex-direction: column;
   height: 100%;
   position: relative;
+
   .qomander {
     padding-top: 45px;
     margin-inline: auto;
     margin-bottom: 165px;
+
     &__logo {
       max-width: 60px;
       width: 100%;
@@ -25,36 +28,45 @@
       cursor: pointer;
     }
   }
+
   .categories-block {
     padding-inline: 15px;
     padding-bottom: 108px;
     padding-top: 10px;
     overflow-y: auto;
+
     .category {
-      background-color: $grey;
+      background-color: $secondary; // Verde principal para bloques
       margin-bottom: 22px;
       padding: 13px 10px;
       border-radius: 17px;
+        border: 2px solid $primary; // Borde verde principal
       transition: outline-color 0.3s;
       text-align: center;
       cursor: pointer;
+
       &__picture {
         max-width: 86%;
         max-height: 49px;
       }
+
       &__name {
         text-align: center;
         font-weight: 600;
         font-size: 13px;
         padding-top: 5px;
+        color: $white; // Texto blanco para legibilidad
       }
+
       &__selected {
-        outline: 2.5px solid $primary;
+        outline: 2.5px solid $primary; // Verde principal para selección
         position: relative;
+
         img.check-mark {
           visibility: visible !important;
         }
       }
+
       img.check-mark {
         width: 30px;
         position: absolute;
@@ -71,6 +83,6 @@
     height: 108px;
     position: absolute;
     bottom: 0;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #1f1f1fed 76%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, $secondary 76%);
   }
 }
